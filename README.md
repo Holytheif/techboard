@@ -24,6 +24,8 @@ Builds the app for production to the `build` folder.
 
 If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
+## Figma Design
+https://www.figma.com/file/pHKwM0Vm86Hf3BvmJtgWfL/Untitled?node-id=0%3A1
 
 ## Other points :-
 - Firebase integration to be done later
