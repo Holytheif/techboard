@@ -38,7 +38,6 @@ function App() {
                   <OtherEvents />
                   <PostSection />
                   <ContactUs />
-                  <p className="credit"> Made with lob💙</p>
                 </section>
               </div>
             </div>

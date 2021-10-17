@@ -6,8 +6,7 @@ import React from "react";
 function Schedule() {
   return (
     <div className="page" id="p2">
-      <h3>Schedule</h3>
-      <hr></hr>
+      <h3 className="page-title">Schedule</h3>
       <div className="fieldset">
         <fieldset>
           <legend> 29 Sep , Saturday</legend>
@@ -15,78 +14,23 @@ function Schedule() {
             <div className="event">
               <h2>Lorem Ipsum</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, qu
               </p>
             </div>
-            <div className="eventimg">
+            <div className="event-img">
               <img />
             </div>
           </div>
-          <a href="" className="download" download>
-            Download
+          <a href="">
+            <button className="download">
+              Download
+            </button>
           </a>
         </fieldset>
-        <fieldset>
-          <legend>29 Sep , Saturday</legend>
-          <div className="divide2">
-            <div className="event">
-              <h2>Lorem Ipsum</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, qu
-              </p>
-            </div>
-            <div className="eventimg">
-              <img />
-            </div>
-          </div>
-          <a href="" className="download" download>
-            Download
-          </a>
-        </fieldset>
-      </div>
-      <div className="fieldset">
-        <fieldset>
-          <legend>29 Sep , Saturday</legend>
-          <div className="divide2">
-            <div className="event">
-              <h2>Lorem Ipsum</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, qu
-              </p>
-            </div>
-            <div className="eventimg">
-              <img />
-            </div>
-          </div>
-          <a href="" className="download" download>
-            Download
-          </a>
-        </fieldset>
-        <fieldset>
-          <legend>29 Sep , Saturday</legend>
-          <div className="divide2">
-            <div className="event">
-              <h2>Lorem Ipsum</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, qu
-              </p>
-            </div>
-            <div className="eventimg">
-              <img />
-            </div>
-          </div>
-          <a href="" className="download" download>
-            Download
-          </a>
-        </fieldset>
+
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import React from "react";
 import img from "../images/img.svg";
 function Home() {
   return (
-    <div class="page" id="p1">
+    <div className="page" id="p1">
       <div className="intro-header">
         <h1>AIT Technical Board</h1>
         <p>
