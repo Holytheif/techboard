@@ -1,9 +1,13 @@
+
 import React from "react";
 import Home from "../src/components/HomePage/index";
 import Schedule from "../src/components/Schedule/index";
 import OtherEvents from "../src/components/OtherEvents/index";
 import PostSection from "../src/components/PostsSection/index";
 import ContactUs from "../src/components/ContactUs/index";
+import BlogPosts from "./components/OtherEvents"
+
+
 
 function App() {
   return (
