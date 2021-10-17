@@ -1,8 +1,10 @@
+import BlogPosts from "./components/OtherEvents"
+
 
 function App() {
   return (
     <div className="App">
-      {/* components to be added here */}
+      <BlogPosts />
     </div>
   );
 }
