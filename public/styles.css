@@ -12,16 +12,25 @@
     -webkit-transition: all 1s cubic-bezier(.5, -0.005, 0.2, 1) !important;
     color: #fff;
     background: #0B0036;
-    overflow: hidden;
-  }
+    overflow-x: hidden;
 
+  }
+  .page {
+    overflow-y: scroll;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;  
+}
+  .page::-webkit-scrollbar { 
+    width: 0;
+    height: 0;
+}
   .DisplayName{
       display: flex;
       flex-direction: column;
   }
   
   section {
-    width:400%;  
+    width:500%;  
   }
   
   .page {
@@ -33,7 +42,7 @@
     top:5rem;
     background: #0B0036;
     height: 80%;
-    width:60%;
+    width: auto;
   }
   
   #p2 {
@@ -50,6 +59,11 @@
   #p4 {
     left: 300%;
     background: deeppink;
+  }
+
+  #p5 {
+    left: 400%;
+    background: rgb(12, 64, 124);
   }
   
   ul {
@@ -68,16 +82,21 @@
   #t4:target .page#p4 {
       transform: translateX(-290%);
   }
+  #t5:target .page#p5 {
+      transform: translateX(-390%);
+  }
   
   #t2:target .page#p1, 
   #t3:target .page#p1,
-  #t4:target .page#p1 {
+  #t4:target .page#p1, 
+  #t5:target .page#p1 {
     background: black;
   }
   
   #t2:target .page#p1 .icon, 
   #t3:target .page#p1 .icon,
-  #t4:target .page#p1 .icon {
+  #t4:target .page#p1 .icon,
+  #t5:target .page#p1 .icon {
     -webkit-filter: blur(3px);
     filter: blur(3px);
   }
@@ -98,7 +117,8 @@
   
   #t2:target ul .icon,
   #t3:target ul .icon,
-  #t4:target ul .icon {
+  #t4:target ul .icon, 
+  #t5:target ul .icon {
     transform: scale(.6); 
     transition-delay: .25s;
   }
@@ -112,6 +132,9 @@
   }
   
   #t4:target #cuatro {
+    transform: scale(1.2) !important;
+  }
+  #t5:target #pent {
     transform: scale(1.2) !important;
   }
   
@@ -196,6 +219,10 @@
     transform: translateX(0) !important;
     transition-delay: 1s;
   }
+  #t5:target .page#p5 .icon {
+    transform: translateX(0) !important;
+    transition-delay: 1s;
+  }
   
   .credit{
       position: absolute;
@@ -215,6 +242,11 @@ img{
     width:20rem;
     height: 20rem;
 }
+
+.intro-header{
+  padding: 1rem;
+}
+
 .Homeflex{
     display: flex;
     word-spacing: 5px;

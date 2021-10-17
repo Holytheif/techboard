@@ -3,7 +3,7 @@ import img from "../images/img.svg";
 function Home() {
   return (
     <div class="page" id="p1">
-      <div>
+      <div className="intro-header">
         <h1>AIT Technical Board</h1>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
