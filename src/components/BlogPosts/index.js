@@ -19,24 +19,10 @@ const BlogPosts = () => {
                 <div className="articles">
                     <div className="single-article">
                         <div className="article-image">
-                            <img src={img} alt="img" />
+                            <img />
                         </div>
                         <div className="article-content">
-                            <h1>Title</h1>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, sunt rem. Voluptatem labore cumque quam nulla consequatur deserunt quibusdam iste sapiente, aspernatur eius ipsa corrupti veritatis eum quos debitis dicta esse dolor modi laudantium ea provident libero excepturi unde optio. Accusantium voluptatibus at minus! Et quos ad suscipit adipisci eius!
-                            </p>
-                            <button className="visit-article-btn">
-                                Visit Site
-                            </button>
-                        </div>
-                    </div>
-                    <div className="single-article invert">
-                        <div className="article-image">
-                            <img src={img} alt="img" />
-                        </div>
-                        <div className="article-content">
-                            <h1>Title</h1>
+                            <h1 className="article-title">Title</h1>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, sunt rem. Voluptatem labore cumque quam nulla consequatur deserunt quibusdam iste sapiente, aspernatur eius ipsa corrupti veritatis eum quos debitis dicta esse dolor modi laudantium ea provident libero excepturi unde optio. Accusantium voluptatibus at minus! Et quos ad suscipit adipisci eius!
                             </p>
@@ -47,10 +33,24 @@ const BlogPosts = () => {
                     </div>
                     <div className="single-article">
                         <div className="article-image">
-                            <img src={img} alt="img" />
+                            <img />
                         </div>
                         <div className="article-content">
-                            <h1>Title</h1>
+                            <h1 className="article-title">Title</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, sunt rem. Voluptatem labore cumque quam nulla consequatur deserunt quibusdam iste sapiente, aspernatur eius ipsa corrupti veritatis eum quos debitis dicta esse dolor modi laudantium ea provident libero excepturi unde optio. Accusantium voluptatibus at minus! Et quos ad suscipit adipisci eius!
+                            </p>
+                            <button className="visit-article-btn">
+                                Visit Site
+                            </button>
+                        </div>
+                    </div>
+                    <div className="single-article">
+                        <div className="article-image">
+                            <img />
+                        </div>
+                        <div className="article-content">
+                            <h1 className="article-title">Title</h1>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, sunt rem. Voluptatem labore cumque quam nulla consequatur deserunt quibusdam iste sapiente, aspernatur eius ipsa corrupti veritatis eum quos debitis dicta esse dolor modi laudantium ea provident libero excepturi unde optio. Accusantium voluptatibus at minus! Et quos ad suscipit adipisci eius!
                             </p>

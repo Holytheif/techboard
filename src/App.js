@@ -1,12 +1,10 @@
-
 import React from "react";
 import Home from "../src/components/HomePage/index";
 import Schedule from "../src/components/Schedule/index";
-import OtherEvents from "../src/components/OtherEvents/index";
-import PostSection from "../src/components/PostsSection/index";
+import PostSection from "../src/components/PostsSection";
 import ContactUs from "../src/components/ContactUs/index";
-import BlogPosts from "./components/OtherEvents"
-
+import BlogPosts from "./components/BlogPosts"
+import "./styles.css"
 
 
 function App() {
@@ -39,7 +37,7 @@ function App() {
                   </ul>
                   <Home />
                   <Schedule />
-                  <OtherEvents />
+                  <BlogPosts />
                   <PostSection />
                   <ContactUs />
                 </section>

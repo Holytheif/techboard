@@ -5,7 +5,7 @@ const Posts = () => {
     return (
         <div className="page" id="p4">
             <div className="posts-section">
-                <div className="header">
+                <div className="header-section">
                     <h1>Posts</h1>
                     <svg width="577" height="41" viewBox="0 0 577 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <line x1="57.5" y1="19.5" x2="519.5" y2="19.5" stroke="white" strokeWidth="3" strokeLinecap="round" />
