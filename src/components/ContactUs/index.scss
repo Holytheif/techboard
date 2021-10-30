@@ -17,11 +17,11 @@
 	}
 	display: flex;
 	flex-wrap: wrap;
-	max-width: 80%;
+	max-width: 100%;
 	justify-content: space-evenly;
 	align-items: center;
-	margin: auto;
-	padding: 2rem;
+	margin-top: 2rem;
+	padding: 0 2rem;
 }
 .details-card,
 .social-card {
@@ -51,6 +51,11 @@
 	}
 }
 
+@media only screen and (min-width: 1060px) {
+	#p5 {
+		height: 100vh;
+	}
+}
 @media only screen and (max-width: 950px) {
 	.options-section {
 		max-width: 100%;

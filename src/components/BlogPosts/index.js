@@ -1,5 +1,4 @@
 import "./index.scss"
-import img from "./image-9.png"
 const BlogPosts = () => {
     return (
         <div className="page" id="p3">

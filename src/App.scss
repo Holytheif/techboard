@@ -1,0 +1,99 @@
+@mixin zeroDefault {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	@include zeroDefault();
+}
+button {
+	border: none;
+	background: transparent;
+	outline: none;
+}
+i {
+	font-size: 2rem;
+	color: white;
+}
+ul {
+	@include zeroDefault();
+}
+.App {
+	@include zeroDefault();
+	display: flex;
+	flex-flow: row;
+	width: 100%;
+	background: #0b0036;
+	color: white;
+}
+.choice-navbar {
+	@include zeroDefault();
+	position: fixed;
+	left: 0%;
+	top: 0%;
+	width: 10%;
+	margin-top: 8rem;
+}
+.button-list {
+	@include zeroDefault();
+	display: flex;
+	flex-flow: column;
+}
+.nav-btn {
+	margin: 1.5rem 0;
+}
+.content {
+	@include zeroDefault();
+	position: relative;
+	top: 0%;
+	left: 10%;
+	right: 0%;
+	width: 90%;
+}
+.App,
+.content,
+.page,
+section {
+	overflow-y: scroll;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+}
+.App::-webkit-scrollbar,
+.content::-webkit-scrollbar,
+section::-webkit-scrollbar,
+.page::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+}
+
+@media only screen and (max-width: 700px) {
+	.App {
+		flex-flow: column;
+	}
+	.choice-navbar {
+		top: 92%;
+		bottom: 0%;
+		width: 100%;
+		height: 10%;
+		margin: 0;
+		z-index: 2;
+		background-color: #0b0036;
+	}
+	.button-list {
+		flex-flow: row;
+		justify-content: space-evenly;
+	}
+	.nav-btn {
+		margin: 0.5rem 0;
+	}
+	.content {
+		left: 0%;
+		margin-bottom: 10%;
+		width: 100%;
+		z-index: 1;
+	}
+	#p1 {
+		display: flex;
+		flex-flow: column;
+	}
+}

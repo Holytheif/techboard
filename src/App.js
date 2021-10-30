@@ -1,51 +1,143 @@
 import React from "react";
+import { useState } from "react";
+
 import Home from "../src/components/HomePage/index";
 import Schedule from "../src/components/Schedule/index";
 import PostSection from "../src/components/PostsSection";
 import ContactUs from "../src/components/ContactUs/index";
-import BlogPosts from "./components/BlogPosts"
-import "./styles.css"
+import BlogPosts from "./components/BlogPosts";
+// import RenderChoice from "./Choice";
+import "./App.scss"
 
+import { motion } from "framer-motion";
+
+const choiceClickHandler = (setChoice, option) => {
+  setChoice(option);
+}
+
+const renderChoice = (choice) => {
+  switch (choice) {
+    case "home":
+      return (
+        <>
+          <motion.div
+            key={choice}
+            initial={{ opacity: 0.01 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              delay: 0.1,
+              duration: 0.8
+            }}
+          >
+            <Home />
+          </motion.div>
+        </>
+      );
+    case "schedule":
+      return (
+        <>
+          <motion.div
+            key={choice}
+            initial={{ opacity: 0.01 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              delay: 0.1,
+              duration: 0.8
+            }}
+          >
+            <Schedule />
+          </motion.div>
+        </>
+      );
+    case "blogs":
+      return (
+        <>
+          <motion.div
+            key={choice}
+            initial={{ opacity: 0.01 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              delay: 0.1,
+              duration: 0.8
+            }}
+          >
+            <BlogPosts />
+          </motion.div>
+        </>
+      );
+    case "posts":
+      return (
+        <>
+          <motion.div
+            key={choice}
+            initial={{ opacity: 0.01 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              delay: 0.1,
+              duration: 0.8
+            }}
+          >
+            <PostSection />
+          </motion.div>
+        </>
+      );
+    case "contactUs":
+      return (
+        <>
+          <motion.div
+            key={choice}
+            initial={{ opacity: 0.01 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              delay: 0.1,
+              duration: 0.8
+            }}
+          >
+            <ContactUs />
+          </motion.div>
+        </>
+      );
+    default:
+      break;
+  }
+}
 
 function App() {
+  const [choice, setChoice] = useState("home");
+
   return (
     <div className="App">
-      <div className="ct" id="t1">
-        <div className="ct" id="t2">
-          <div className="ct" id="t3">
-            <div className="ct" id="t4">
-              <div className="ct" id="t5">
-                <section>
-                  <ul>
-                    <div className="DisplayName">
-                      <a href="#t1">
-                        <li className="icon fa fa-home" id="uno"></li>
-                      </a>
-                      <a href="#t2">
-                        <li className="icon fa fa-calendar" id="dos"></li>
-                      </a>
-                      <a href="#t3">
-                        <li className="icon fa fa-star" id="tres"></li>
-                      </a>
-                      <a href="#t4">
-                        <li className="icon fa fa-user-friends" id="cuatro"></li>
-                      </a>
-                      <a href="#t5">
-                        <li className="icon fa fa-comments" id="pent"></li>
-                      </a>
-                    </div>
-                  </ul>
-                  <Home />
-                  <Schedule />
-                  <BlogPosts />
-                  <PostSection />
-                  <ContactUs />
-                </section>
-              </div>
-            </div>
-          </div>
+      <section className="choice-navbar">
+        <div className="button-list">
+          <button className="home nav-btn" onClick={() => choiceClickHandler(setChoice, "home")}>
+            <i className="icon fa fa-home" id="uno"></i>
+          </button>
+          <button className="schedule nav-btn" onClick={() => choiceClickHandler(setChoice, "schedule")}>
+            <i
+              className="icon fa fa-calendar"
+              id="dos"
+            ></i>
+          </button>
+          <button className="blogs nav-btn" onClick={() => choiceClickHandler(setChoice, "blogs")}>
+            <i className="icon fa fa-star" id="tres"></i>
+          </button>
+          <button className="posts nav-btn" onClick={() => choiceClickHandler(setChoice, "posts")}>
+            <i
+              className="icon fa fa-user-friends"
+              id="cuatro"
+            ></i>
+          </button>
+          <button className="contactUs nav-btn" onClick={() => choiceClickHandler(setChoice, "contactUs")}>
+            <i
+              className="icon fa fa-comments"
+              id="pent"
+            ></i>
+          </button>
         </div>
-      </div>
+      </section>
+      <section className="content">
+        {renderChoice(choice)}
+      </section>
     </div>
   );
 }

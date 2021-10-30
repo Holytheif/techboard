@@ -21,8 +21,8 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 80%;
-	margin: 0;
+	width: 90%;
+	margin: auto;
 	flex-flow: column;
 	flex-wrap: wrap;
 }
@@ -51,7 +51,7 @@
 	border-width: 3px;
 	border-image-source: linear-gradient(to right, #07b8f9, #fa00ff);
 	padding: 1rem 2rem;
-	max-height: 300px;
+	max-height: 500px;
 	> p {
 		margin-bottom: 1rem;
 		color: black;
@@ -83,5 +83,18 @@
 	}
 	.article-content {
 		width: 100%;
+	}
+	.article-content {
+		padding: 0;
+		> h1 {
+			margin-left: 0.5rem;
+		}
+		> p {
+			margin-left: 0.5rem;
+		}
+		.visit-article-btn {
+			margin-left: 0.5rem;
+			margin-bottom: 0.5rem;
+		}
 	}
 }

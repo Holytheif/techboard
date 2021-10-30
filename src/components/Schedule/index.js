@@ -1,6 +1,7 @@
 import { directive } from "@babel/types";
 import { getByTitle } from "@testing-library/react";
 import React from "react";
+import "./index.scss";
 // import img1 from "../images/img1.svg";
 
 function Schedule() {
@@ -19,136 +20,91 @@ function Schedule() {
         </svg>
       </div>
       <div className="schedule-section">
+
         <div className="fieldset">
           <fieldset>
             <legend> 29 Sep , Saturday</legend>
-            <div className="event-img">
-              <img />
-            </div>
-            <div className="divide2">
-              <div className="event">
-                <h2>Lorem Ipsum</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sapiente minima, qui voluptatibus doloribus culpa quisquam iure officiis. Fugiat, expedita?
-                </p>
+            <div className="content-container">
+              <div className="event-img">
+                <img />
               </div>
-              <div className="btn">
-                <a href="">
-                  <button className="download">
-                    Download
-                  </button>
-                </a>
+              <div className="divide2">
+                <div className="event">
+                  <h2>Lorem Ipsum</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sapiente minima, qui voluptatibus doloribus culpa quisquam iure officiis. Fugiat, expedita?
+                  </p>
+                </div>
+                <div className="btn">
+                  <a href="">
+                    <button className="download">
+                      Download
+                    </button>
+                  </a>
+                </div>
               </div>
             </div>
           </fieldset>
-
         </div>
+
         <div className="fieldset">
           <fieldset>
             <legend> 29 Sep , Saturday</legend>
-            <div className="divide2">
-              <div className="event">
-                <h2>Lorem Ipsum</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sapiente minima, qui voluptatibus doloribus culpa quisquam iure officiis. Fugiat, expedita?
-                </p>
+            <div className="content-container">
+              <div className="event-img">
+                <img />
               </div>
-              <div className="btn">
-                <a href="">
-                  <button className="download">
-                    Download
-                  </button>
-                </a>
+              <div className="divide2">
+                <div className="event">
+                  <h2>Lorem Ipsum</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sapiente minima, qui voluptatibus doloribus culpa quisquam iure officiis. Fugiat, expedita?
+                  </p>
+                </div>
+                <div className="btn">
+                  <a href="">
+                    <button className="download">
+                      Download
+                    </button>
+                  </a>
+                </div>
               </div>
-            </div>
-            <div className="event-img">
-              <img />
             </div>
           </fieldset>
-
         </div>
+
         <div className="fieldset">
           <fieldset>
             <legend> 29 Sep , Saturday</legend>
-            <div className="divide2">
-              <div className="event">
-                <h2>Lorem Ipsum</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sapiente minima, qui voluptatibus doloribus culpa quisquam iure officiis. Fugiat, expedita?
-                </p>
+            <div className="content-container">
+              <div className="event-img">
+                <img />
               </div>
-              <div className="btn">
-                <a href="">
-                  <button className="download">
-                    Download
-                  </button>
-                </a>
+              <div className="divide2">
+                <div className="event">
+                  <h2>Lorem Ipsum</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sapiente minima, qui voluptatibus doloribus culpa quisquam iure officiis. Fugiat, expedita?
+                  </p>
+                </div>
+                <div className="btn">
+                  <a href="">
+                    <button className="download">
+                      Download
+                    </button>
+                  </a>
+                </div>
               </div>
-            </div>
-            <div className="event-img">
-              <img />
             </div>
           </fieldset>
-
         </div>
-        <div className="fieldset">
-          <fieldset>
-            <legend> 29 Sep , Saturday</legend>
-            <div className="divide2">
-              <div className="event">
-                <h2>Lorem Ipsum</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sapiente minima, qui voluptatibus doloribus culpa quisquam iure officiis. Fugiat, expedita?
-                </p>
-              </div>
-              <div className="btn">
-                <a href="">
-                  <button className="download">
-                    Download
-                  </button>
-                </a>
-              </div>
-            </div>
-            <div className="event-img">
-              <img />
-            </div>
-          </fieldset>
 
-        </div>
-        <div className="fieldset">
-          <fieldset>
-            <legend> 29 Sep , Saturday</legend>
-            <div className="divide2">
-              <div className="event">
-                <h2>Lorem Ipsum</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sapiente minima, qui voluptatibus doloribus culpa quisquam iure officiis. Fugiat, expedita?
-                </p>
-              </div>
-              <div className="btn">
-                <a href="">
-                  <button className="download">
-                    Download
-                  </button>
-                </a>
-              </div>
-            </div>
-            <div className="event-img">
-              <img />
-            </div>
-          </fieldset>
-
-        </div>
       </div>
     </div>
   );

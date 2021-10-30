@@ -1,0 +1,51 @@
+@mixin zeroDefault {
+	margin: 0;
+	padding: 0;
+}
+
+.page h1 {
+	font-family: Montserrat;
+	font-style: Bold;
+	font-size: 40px;
+	background: linear-gradient(
+		90.65deg,
+		#b312ff 3.02%,
+		#665aff 30.47%,
+		#00b9ff 98.85%
+	);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.page p {
+	word-spacing: 5px;
+}
+
+#p1 {
+	margin: 0 2rem;
+	height: 100vh;
+	> * {
+		@include zeroDefault();
+	}
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+.Homeflex {
+	display: flex;
+	word-spacing: 5px;
+}
+.Homeflex img {
+	width: 20rem;
+	height: 20rem;
+}
+
+@media only screen and (max-width: 700px) {
+	.Homeflex {
+		flex-wrap: wrap-reverse;
+	}
+	#p1 {
+		height: auto;
+	}
+}
