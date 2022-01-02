@@ -97,3 +97,9 @@ section::-webkit-scrollbar,
 		flex-flow: column;
 	}
 }
+
+@media only screen and (max-width: 500px) {
+	i {
+		font-size: 1.5rem;
+	}
+}

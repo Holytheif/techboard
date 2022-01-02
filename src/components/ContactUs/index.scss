@@ -8,7 +8,7 @@
 	justify-content: center;
 	align-items: center;
 	> svg {
-		width: 60%;
+		width: 90%;
 	}
 }
 .options-section {
@@ -25,7 +25,7 @@
 }
 .details-card,
 .social-card {
-	width: 30%;
+	width: 25%;
 	height: 200px;
 	padding: 1rem;
 	> * {
@@ -51,7 +51,7 @@
 	}
 }
 
-@media only screen and (min-width: 1060px) {
+@media only screen and (min-width: 950px) {
 	#p5 {
 		height: 100vh;
 	}
@@ -71,13 +71,7 @@
 		width: 40%;
 	}
 }
-@media only screen and (max-width: 600px) {
-	.details-card,
-	.social-card {
-		width: 60%;
-	}
-}
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
 	.details-card,
 	.social-card {
 		width: 80%;

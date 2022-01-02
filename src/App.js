@@ -6,7 +6,8 @@ import Schedule from "../src/components/Schedule/index";
 import PostSection from "../src/components/PostsSection";
 import ContactUs from "../src/components/ContactUs/index";
 import BlogPosts from "./components/BlogPosts";
-// import RenderChoice from "./Choice";
+import TeamMembers from "./components/Team";
+
 import "./App.scss"
 
 import { motion } from "framer-motion";
@@ -97,6 +98,22 @@ const renderChoice = (choice) => {
           </motion.div>
         </>
       );
+    case "team":
+      return (
+        <>
+          <motion.div
+            key={choice}
+            initial={{ opacity: 0.01 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              delay: 0.1,
+              duration: 0.8
+            }}
+          >
+            <TeamMembers />
+          </motion.div>
+        </>
+      );
     default:
       break;
   }
@@ -128,6 +145,12 @@ function App() {
             ></i>
           </button>
           <button className="contactUs nav-btn" onClick={() => choiceClickHandler(setChoice, "contactUs")}>
+            <i
+              className="icon fa fa-comments"
+              id="pent"
+            ></i>
+          </button>
+          <button className="team nav-btn" onClick={() => choiceClickHandler(setChoice, "team")}>
             <i
               className="icon fa fa-comments"
               id="pent"
