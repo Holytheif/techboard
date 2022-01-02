@@ -24,7 +24,9 @@ const Posts = () => {
                         </div>
                         <div className="card-text">
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ratione corporis laboriosam cum voluptas esse error vitae quibusdam dolorem sapiente.
+                                The Technical Board is here with another exciting event and an opportunity for everyone to discover and show your Technical And Research skills🔥
+                                <br /><br />
+                                We present to you our ...
                             </p>
                         </div>
                     </div>
@@ -34,7 +36,7 @@ const Posts = () => {
                         </div>
                         <div className="card-text">
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ratione corporis laboriosam cum voluptas esse error vitae quibusdam dolorem sapiente.
+                                Wishing Everyone A very Happy Diwali!✨
                             </p>
                         </div>
                     </div>
@@ -44,7 +46,9 @@ const Posts = () => {
                         </div>
                         <div className="card-text">
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ratione corporis laboriosam cum voluptas esse error vitae quibusdam dolorem sapiente.
+                                Remembering the man who gave India its wings of fire.🔥
+                                <br /><br />
+                                Happy World Students' Day to all the students across the world! 🙂
                             </p>
                         </div>
                     </div>

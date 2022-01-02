@@ -50,7 +50,7 @@ const ContactUs = () => {
                             </p>
                         </div>
                         <div className="description">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur iusto aut inventore nulla quod sint nihil adipisci assumenda. Necessitatibus, cumque?</p>
+                            <p>Join our facebook page to stay updated with astonishing events and amazing sessions </p>
                         </div>
                     </div>
                     <div className="social-card">
@@ -61,7 +61,7 @@ const ContactUs = () => {
                             </p>
                         </div>
                         <div className="description">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur iusto aut inventore nulla quod sint nihil adipisci assumenda. Necessitatibus, cumque?</p>
+                            <p>Check out our insta page and stay updated with ongoing hackathons, exciting events and amazing sessions </p>
                         </div>
                     </div>
                     <div className="social-card">
@@ -72,7 +72,7 @@ const ContactUs = () => {
                             </p>
                         </div>
                         <div className="description">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur iusto aut inventore nulla quod sint nihil adipisci assumenda. Necessitatibus, cumque?</p>
+                            <p>Check out cool projects served by AITians and contribute to their awesome projects</p>
                         </div>
                     </div>
                     <div className="social-card">
@@ -83,7 +83,7 @@ const ContactUs = () => {
                             </p>
                         </div>
                         <div className="description">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur iusto aut inventore nulla quod sint nihil adipisci assumenda. Necessitatibus, cumque?</p>
+                            <p>Chat professionally with us here and ask your queries </p>
                         </div>
                     </div>
                 </div>

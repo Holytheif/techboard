@@ -7,30 +7,16 @@ function Home() {
 			<div className="intro-header">
 				<h1>AIT Technical Board</h1>
 				<p>
-					Lorem Ipsum is simply dummy text of the printing and typesetting
-					industry. Lorem Ipsum has been the industry's standard dummy text ever
-					since the 1500s, when an unknown printer took a galley of type and
-					scrambled it to make a type specimen book. It has survived not only
-					five centuries, but also the leap into electronic typesetting,
-					remaining essentially unchanged. It was popularised in the 1960s with
-					the release of Letraset sheets containing Lorem Ipsum passages, and
-					more recently with desktop publishing software like Aldus PageMaker
-					including versions of Lorem Ipsum.
+					Engineering and technical board aspires to drop-ship particulars regarding every happening in the gallery of engineering world be it ongoing hackathons, exciting events, amazing sessions  and conferences taking place through the platform.
+
 				</p>
 			</div>
 			<div className="major-event-info">
 				<h1>Solutions</h1>
 				<div className="Homeflex">
 					<p>
-						Lorem Ipsum is simply dummy text of the printing and typesetting
-						industry. Lorem Ipsum has been the industry's standard dummy text ever
-						since the 1500s, when an unknown printer took a galley of type and
-						scrambled it to make a type specimen book. It has survived not only
-						five centuries, but also the leap into electronic typesetting,
-						remaining essentially unchanged. It was popularised in the 1960s with
-						the release of Letraset sheets containing Lorem Ipsum passages, and
-						more recently with desktop publishing software like Aldus PageMaker
-						including versions of Lorem Ipsum.
+						“SOLUTIONS” is the most awaited TECHNICAL FEST of AIT “SOLUTIONS 2K22” in a 'What not Different!!!' with the first-ever virtual + ground zero experience,
+						So gear up your machines, brush up your minds, and markdown your calendar  to participate, win exciting prizes, and have an awesome experience✨
 					</p>
 					<img src={img} />
 				</div>
