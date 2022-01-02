@@ -5,7 +5,6 @@ import Home from "../src/components/HomePage/index";
 import Schedule from "../src/components/Schedule/index";
 import PostSection from "../src/components/PostsSection";
 import ContactUs from "../src/components/ContactUs/index";
-import BlogPosts from "./components/BlogPosts";
 import TeamMembers from "./components/Team";
 
 import "./App.scss"
@@ -47,22 +46,6 @@ const renderChoice = (choice) => {
 						}}
 					>
 						<Schedule />
-					</motion.div>
-				</>
-			);
-		case "blogs":
-			return (
-				<>
-					<motion.div
-						key={choice}
-						initial={{ opacity: 0.01 }}
-						animate={{ opacity: 1 }}
-						transition={{
-							delay: 0.1,
-							duration: 0.8
-						}}
-					>
-						<BlogPosts />
 					</motion.div>
 				</>
 			);
@@ -134,9 +117,6 @@ function App() {
 							className="icon fa fa-calendar"
 							id="dos"
 						></i>
-					</button>
-					<button className="blogs nav-btn" onClick={() => choiceClickHandler(setChoice, "blogs")}>
-						<i className="icon fa fa-star" id="tres"></i>
 					</button>
 					<button className="posts nav-btn" onClick={() => choiceClickHandler(setChoice, "posts")}>
 						<i
