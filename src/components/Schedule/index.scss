@@ -1,11 +1,3 @@
-.schedule-container {
-	margin: 0;
-	padding: 0;
-	display: flex;
-	flex-wrap: wrap;
-	width: 80%;
-	margin-left: 6rem;
-}
 .header {
 	display: flex;
 	flex-flow: column;
@@ -26,8 +18,10 @@
 	padding: 0;
 }
 .schedule-section {
+	margin: 0;
+	padding: 0;
 	display: flex;
-	flex-flow: column;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 }
@@ -35,12 +29,12 @@
 	display: flex;
 	flex-flow: row;
 	flex-wrap: wrap;
-	width: 80%;
+	width: 45%;
 	margin: 2rem auto;
 }
 fieldset {
 	width: 100%;
-	height: 45%;
+	height: auto;
 	background: linear-gradient(180deg, #9337ff 0%, #181671 100%);
 	border: 0.3rem solid;
 	border-color: #07b8f9;
@@ -70,6 +64,7 @@ legend {
 
 .event-img img {
 	width: 100%;
+	height: auto;
 	color: #00b9ff;
 }
 .divide2 {
@@ -105,12 +100,22 @@ legend {
 	padding: 0.5rem 0.25rem;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 750px) {
 	.content-container {
 		flex-flow: column;
 	}
+	.schedule-section {
+		flex-flow: column;
+	}
+	fieldset {
+		height: fit-content;
+	}
 	.fieldset {
 		margin: 1rem 0;
+		width: 80%;
+	}
+	.event {
+		margin: 0.5rem 0;
 	}
 	.divide2,
 	.event-img {
@@ -119,6 +124,5 @@ legend {
 	}
 	.event-img {
 		max-width: 500px;
-		height: 225px;
 	}
 }

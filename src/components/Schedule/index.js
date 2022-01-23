@@ -1,10 +1,46 @@
 import { directive } from "@babel/types";
-import { getByTitle } from "@testing-library/react";
+import { getByTitle, render } from "@testing-library/react";
 import React from "react";
 import "./index.scss";
-// import img1 from "../images/img1.svg";
+import schedule from "./schedule";
 
-function Schedule() {
+const renderSchedule = () => {
+
+	return (
+		schedule.map((post) => {
+			return (
+				<>
+					<div className="fieldset">
+						<fieldset>
+							<legend>{post.date}</legend>
+							<div className="content-container">
+								<div className="event-img">
+									<img src={post.imgURL} />
+								</div>
+								<div className="divide2">
+									<div className="event">
+										<h2>{post.title}</h2>
+										<p>
+											{post.description}
+										</p>
+									</div>
+									<div className="btn">
+										<a href={post.link}>
+											<button className="download">
+												Download
+											</button>
+										</a>
+									</div>
+								</div>
+							</div>
+						</fieldset>
+					</div>
+				</>)
+		})
+	)
+}
+
+const Schedule = () => {
 	return (
 		<div className="page" id="p2">
 			<div className="header">
@@ -20,114 +56,7 @@ function Schedule() {
 				</svg>
 			</div>
 			<div className="schedule-section">
-
-				<div className="fieldset">
-					<fieldset>
-						<legend>9 Oct, Saturday</legend>
-						<div className="content-container">
-							<div className="event-img">
-								<img />
-							</div>
-							<div className="divide2">
-								<div className="event">
-									<h2>LOGO REVEAL</h2>
-									<p>
-										We are here to start the change by acknowledging the previous one and starting our new .............
-									</p>
-								</div>
-								<div className="btn">
-									<a href="">
-										<button className="download">
-											Download
-										</button>
-									</a>
-								</div>
-							</div>
-						</div>
-					</fieldset>
-				</div>
-
-				<div className="fieldset">
-					<fieldset>
-						<legend> 15 Sep , Saturday</legend>
-						<div className="content-container">
-							<div className="event-img">
-								<img />
-							</div>
-							<div className="divide2">
-								<div className="event">
-									<h2>Jigyasa</h2>
-									<p>
-										We know how boring it is during these times when you have to stay home! We are here with a really special event! So buckle up and get ready to participate!
-
-									</p>
-								</div>
-								<div className="btn">
-									<a href="">
-										<button className="download">
-											Download
-										</button>
-									</a>
-								</div>
-							</div>
-						</div>
-					</fieldset>
-				</div>
-
-				<div className="fieldset">
-					<fieldset>
-						<legend> 16 Oct , Saturday</legend>
-						<div className="content-container">
-							<div className="event-img">
-								<img />
-							</div>
-							<div className="divide2">
-								<div className="event">
-									<h2>Ideathon</h2>
-									<p>
-										You just hold your will , we have got the place to listen to your ideas.
-										Once again Techboard is back with its next event "Ideathon".
-									</p>
-								</div>
-								<div className="btn">
-									<a href="">
-										<button className="download">
-											Download
-										</button>
-									</a>
-								</div>
-							</div>
-						</div>
-					</fieldset>
-				</div>
-
-				<div className="fieldset">
-					<fieldset>
-						<legend> 29 Nov, Sunday</legend>
-						<div className="content-container">
-							<div className="event-img">
-								<img />
-							</div>
-							<div className="divide2">
-								<div className="event">
-									<h2>Vulcan</h2>
-									<p>
-										The TECHNICAL BOARD is here again with an exciting opportunity for SE, TE, and BE to take a step in research and publish your own IEEE paper.
-
-									</p>
-								</div>
-								<div className="btn">
-									<a href="">
-										<button className="download">
-											Download
-										</button>
-									</a>
-								</div>
-							</div>
-						</div>
-					</fieldset>
-				</div>
-
+				{renderSchedule()}
 			</div>
 		</div>
 	);

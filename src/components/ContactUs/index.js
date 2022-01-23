@@ -44,10 +44,12 @@ const ContactUs = () => {
                     </div>
                     <div className="social-card">
                         <div className="title">
-                            <p>
-                                <i className="fab fa-facebook option-icon"></i>
-                                Facebook
-                            </p>
+                            <a href="https://www.facebook.com/groups/680716451983061/?hoisted_section_header_type=recently_seen&multi_permalinks=4771245749596757">
+                                <p>
+                                    <i className="fab fa-facebook option-icon"></i>
+                                    Facebook
+                                </p>
+                            </a>
                         </div>
                         <div className="description">
                             <p>Join our facebook page to stay updated with astonishing events and amazing sessions </p>
@@ -55,10 +57,12 @@ const ContactUs = () => {
                     </div>
                     <div className="social-card">
                         <div className="title">
-                            <p>
-                                <i className="fab fa-instagram option-icon"></i>
-                                Instagram
-                            </p>
+                            <a href="https://www.instagram.com/aittechnicalboard/">
+                                <p>
+                                    <i className="fab fa-instagram option-icon"></i>
+                                    Instagram
+                                </p>
+                            </a>
                         </div>
                         <div className="description">
                             <p>Check out our insta page and stay updated with ongoing hackathons, exciting events and amazing sessions </p>
@@ -77,10 +81,12 @@ const ContactUs = () => {
                     </div>
                     <div className="social-card">
                         <div className="title">
-                            <p>
-                                <i className="fab fa-linkedin option-icon"></i>
-                                LinkedIn
-                            </p>
+                            <a href="https://www.linkedin.com/company/technical-board-ait/mycompany/">
+                                <p>
+                                    <i className="fab fa-linkedin option-icon"></i>
+                                    LinkedIn
+                                </p>
+                            </a>
                         </div>
                         <div className="description">
                             <p>Chat professionally with us here and ask your queries </p>
@@ -88,7 +94,7 @@ const ContactUs = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     );
 }
 

@@ -1,5 +1,27 @@
 import "./index.scss"
-import img from "./Rectangle-351.png"
+import posts from "./posts";
+
+const renderPosts = () => {
+
+    return (
+        posts.map((post) => {
+            return (
+                <>
+                    <div className="card">
+                        <div className="card-image">
+                            <img src={post.imgURL} alt="" />
+                        </div>
+                        <div className="card-text">
+                            <p>
+                                {post.description}
+                            </p>
+                        </div>
+                    </div>
+                </>)
+        })
+    )
+}
+
 
 const Posts = () => {
     return (
@@ -18,40 +40,7 @@ const Posts = () => {
                     </svg>
                 </div>
                 <div className="posts-cards">
-                    <div className="card">
-                        <div className="card-image">
-                            <img src={img} alt="" />
-                        </div>
-                        <div className="card-text">
-                            <p>
-                                The Technical Board is here with another exciting event and an opportunity for everyone to discover and show your Technical And Research skills🔥
-                                <br /><br />
-                                We present to you our ...
-                            </p>
-                        </div>
-                    </div>
-                    <div className="card">
-                        <div className="card-image">
-                            <img src={img} alt="" />
-                        </div>
-                        <div className="card-text">
-                            <p>
-                                Wishing Everyone A very Happy Diwali!✨
-                            </p>
-                        </div>
-                    </div>
-                    <div className="card">
-                        <div className="card-image">
-                            <img src={img} alt="" />
-                        </div>
-                        <div className="card-text">
-                            <p>
-                                Remembering the man who gave India its wings of fire.🔥
-                                <br /><br />
-                                Happy World Students' Day to all the students across the world! 🙂
-                            </p>
-                        </div>
-                    </div>
+                    {renderPosts()}
                 </div>
             </div>
         </div>

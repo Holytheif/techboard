@@ -2,6 +2,14 @@
 	margin: 0;
 	padding: 0;
 }
+a {
+	text-decoration: none;
+	@include zero();
+	color: white;
+}
+p {
+	@include zero();
+}
 .header {
 	display: flex;
 	flex-flow: column;
