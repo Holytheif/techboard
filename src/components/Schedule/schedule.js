@@ -4,7 +4,7 @@ export default [
 		title: "Presentation",
 		description: `TechBoad is here with its event exculsively for you people " IEEE Poster Presentation" to celebrate the "National Energy Conservation Day".`,
 		link: "",
-		imgURL: "./Posters/PosterPresentation.png"
+		imgURL: "./Posters/PosterPresentation.jpg"
 	},
 	{
 		date: "28 Nov, Sunday",
@@ -21,7 +21,7 @@ export default [
 		Once again Techboard is back with its next event "Ideathon".
 		`,
 		link: "",
-		imgURL: "./Posters/Ideathon.png"
+		imgURL: "./Posters/Ideathon.jpg"
 	},
 	{
 		date: "15 Sep, Saturday",
