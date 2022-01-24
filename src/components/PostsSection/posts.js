@@ -10,7 +10,7 @@ export default [
 		Once again a Very Happy New Year 🎉💫💥🎊❤️`
 	},
 	{
-		imgURL: "./Posters/PosterPresentation.png",
+		imgURL: "./Posters/PosterPresentation.jpg",
 		description: `TechBoad is here with its event exculsively for you people " IEEE Poster Presentation" to celebrate the "National Energy Conservation Day".
 		
 		So open up your minds , show us your creativity and put it into the posters reflecting your concern about the nature.`
