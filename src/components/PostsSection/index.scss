@@ -32,9 +32,16 @@
 	align-items: center;
 	max-width: 250px;
 	height: 450px;
-	border: 2px solid whitesmoke;
+	border: 4px solid;
+	border-image-source: linear-gradient(
+		to bottom,
+		#07bff9 1.96%,
+		#2ae7e0 100%
+	);
+	border-image-slice: 1;
 	padding: 1rem;
 	margin-top: 1rem;
+	background: linear-gradient(180deg, #181671 0%, #0b0036 100%);
 }
 
 .card-image img {
