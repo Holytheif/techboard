@@ -28,7 +28,9 @@ const Posts = () => {
         <div className="page" id="p4">
             <div className="posts-section">
                 <div className="header-section">
-                    <h1>Posts</h1>
+                    <a href="https://www.instagram.com/aittechnicalboard/">
+                        <h1>Posts</h1>
+                    </a>
                     <svg width="577" height="41" viewBox="0 0 577 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <line x1="57.5" y1="19.5" x2="519.5" y2="19.5" stroke="white" strokeWidth="3" strokeLinecap="round" />
                         <path d="M23.6042 20.4833C23.6042 20.4833 14.936 15.9204 6.5814 16.2546C4.58972 16.3226 -0.693536 17.9372 1.88941 21.9757C4.10852 25.4416 15.7324 24.6557 23.6042 20.4833Z" fill="white" />

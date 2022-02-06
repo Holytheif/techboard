@@ -45,7 +45,19 @@ ul {
 }
 .nav-btn {
 	margin: 1.5rem 0;
+	& img {
+		width: 30px;
+	}
+	& img:hover {
+		filter: invert(72%) sepia(54%) saturate(6702%) hue-rotate(164deg)
+			brightness(107%) contrast(95%);
+	}
 }
+#logo {
+	width: 40px;
+	filter: none;
+}
+
 .content {
 	@include zeroDefault();
 	position: relative;
@@ -106,4 +118,26 @@ section::-webkit-scrollbar,
 	i {
 		font-size: 1.5rem;
 	}
+}
+
+.page-animate-enter {
+	opacity: 0;
+	transform: translate(-500px);
+}
+
+.page-animate-enter-active {
+	opacity: 1;
+	transform: scale(1);
+	transition: opacity 300ms, transform 300ms;
+}
+
+.page-animate-exit {
+	opacity: 1;
+	transform: translate(500px);
+}
+
+.page-animate-exit-active {
+	opacity: 0;
+	transform: scale(0.9);
+	transition: opacity 300ms, transform 300ms;
 }

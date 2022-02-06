@@ -42,6 +42,8 @@ const renderTeamLeadsDetails = () => {
 	const teamLeadsDetails = fetchTeamLeadDetails();
 
 	return (teamLeadsDetails.map((member, index) => {
+
+		const mailID = `mailto:${member["Gmail ID"]}`;
 		if (index == 1) {
 			return (
 				<>
@@ -58,9 +60,11 @@ const renderTeamLeadsDetails = () => {
 										<i className="fab fa-facebook option-icon socio-links"></i>
 									</button>
 								</a>
-								<button>
-									<i className="fab fa-google-plus socio-links"></i>
-								</button>
+								<a href={mailID}>
+									<button>
+										<i className="fab fa-google-plus socio-links"></i>
+									</button>
+								</a>
 								<a href={member["Instagram profile"]}>
 									<button>
 										<i className="fab fa-instagram option-icon socio-links"></i>
@@ -101,9 +105,11 @@ const renderTeamLeadsDetails = () => {
 									<i className="fab fa-facebook option-icon socio-links"></i>
 								</button>
 							</a>
-							<button>
-								<i className="fab fa-google-plus socio-links"></i>
-							</button>
+							<a href={mailID}>
+								<button>
+									<i className="fab fa-google-plus socio-links"></i>
+								</button>
+							</a>
 							<a href={member["Instagram profile"]}>
 								<button>
 									<i className="fab fa-instagram option-icon socio-links"></i>
@@ -135,6 +141,7 @@ const renderTeamJtSecDetails = () => {
 	const teamJtSecDetails = fetchTeamJtSecDetails();
 
 	return (teamJtSecDetails.map((member) => {
+		const mailID = `mailto:${member["Gmail ID"]}`;
 		return (
 			<>
 				<div className={member.designation}>
@@ -150,9 +157,11 @@ const renderTeamJtSecDetails = () => {
 									<i className="fab fa-facebook option-icon socio-links"></i>
 								</button>
 							</a>
-							<button>
-								<i className="fab fa-google-plus socio-links"></i>
-							</button>
+							<a href={mailID}>
+								<button>
+									<i className="fab fa-google-plus socio-links"></i>
+								</button>
+							</a>
 							<a href={member["Instagram profile"]}>
 								<button>
 									<i className="fab fa-instagram option-icon socio-links"></i>
