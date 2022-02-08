@@ -1,33 +1,19 @@
-# Getting Started with Create React App
+# Technical Board 
+### Army Institute of Technology
+![TB logo](https://user-images.githubusercontent.com/76542531/152924317-a300b0f3-b844-48ec-88bf-27aaab91a80d.svg)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Engineering and technical board aspires to drop-ship particulars regarding every happening in the gallery of engineering world be it ongoing hackathons, exciting events, amazing sessions and conferences taking place through the platform.
 
-## Available Scripts
+##  Contributors
+- [Holytheif](https://github.com/Holytheif) - Risabh Rai, Jt. Secretary
+- [Harshwardhan4k](https://github.com/Harshwardhan4k) - Prince Harshwardhan Kapare, Jt. Secretary
+- [impetus007](https://github.com/impetus007) - Vishal Singh, Jt. Secretary
+- [izmekai](https://github.com/izmekai) - Khushi, Jt. Secretary
 
-In the project directory, you can run:
 
-### `npm start`
-
-Runs the app in the development mode.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-## Figma Design
-https://www.figma.com/file/pHKwM0Vm86Hf3BvmJtgWfL/Untitled?node-id=0%3A1
-
-## Other points :-
-- Firebase integration to be done later
-- No use of Redux or other state management library
-- Included libraries and components will be mentioned by the contributor
+### Pre-requisites
+NodeJS : Install from here.
+### Installation
+```npm i``` : Install dependencies.
+### Running
+```npm start``` : Run the app in development mode.
